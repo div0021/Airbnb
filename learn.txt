@@ -1,0 +1,40 @@
+before creating hook folder we are installing zustand(State management library)
+
+Tailwindcss important classes 
+-> peer
+
+
+
+
+
+npm new packages
+-> react-hot-toast
+
+
+next-auth packages
+->npm i next-auth @next-auth/adapter
+
+
+To push data base to remote
+-> npx prisma db push
+
+bcrypt with types
+-> npm i -D bcrypt @types/bcrypt
+
+In prismadb.ts all the stuff is done because nextjs 13 hot reloading can cause bunch of new PrismaClient() instances to be created getting us a warning in the terminal. So this way we assign prisma client to a globalThis variable which will not affected by nextjs hot reloading
+
+
+
+npm i next-cloudinary
+npm i leaflet --> this is not offical for react 
+
+step in cloudinary
+--> to get name ==> got to dashboard and see cloud_name in cloudinary application,
+--> then go to setting-> upload and then click on add upload present. 
+**Make sure signing Mode is unsigned**
+
+for customizing date
+npm i date-fns
+
+To deal with dates we use 
+--=> npm install react-date-range
