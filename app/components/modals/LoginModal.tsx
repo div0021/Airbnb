@@ -107,7 +107,7 @@ const LoginModal = () => {
                     <div className="">
                         First time using Airbnb?
                     </div>
-                    <div className="text-neutral-800 cursor-pointer hover:underline" onClick={toggle}>Create an account</div>
+                    <div className="text-neutral-800 cursor-pointer hover:underline dark:text-neutral-200" onClick={toggle}>Create an account</div>
                 </div>
               </div>
         </div>

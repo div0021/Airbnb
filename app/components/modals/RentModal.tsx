@@ -193,6 +193,7 @@ const RentModal = ()=>{
                 <Input 
                 id='title'
                 label="Title"
+                type="text"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -202,6 +203,7 @@ const RentModal = ()=>{
                 <Input 
                 id='description'
                 label="Description"
+                type="text"
                 disabled={isLoading}
                 register={register}
                 errors={errors}

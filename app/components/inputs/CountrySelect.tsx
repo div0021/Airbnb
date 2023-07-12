@@ -29,22 +29,22 @@ const CountrySelect:React.FC<CountrySelectProps> = ({
               value={value}
               onChange={(value)=>onChange(value as CountrySelectValue)}
               formatOptionLabel={(option:any) => (
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex flex-row items-center gap-3 dark:text-neutral-300">
 
                     <div>
                          {option.flag}
                     </div>
                    <div>{option.label}
-                   <span className="text-neutral-500 ml-1">
+                   <span className="text-neutral-500 ml-1 dark:text-white">
                     {option.region}
                    </span>
                    </div>
                 </div>
               )}
               classNames={{
-                control:()=> 'p-3 border-2',
-                input:() => 'text-lg',
-                option:()=> 'text-lg'
+                control:()=> 'p-3 border-2 dark:bg-gray-800 dark:text-gray-600',
+                input:() => 'text-lg dark:text-white',
+                option:()=> 'text-lg dark:bg-gray-600'
               }}
 
               theme={(theme)=>({
@@ -53,7 +53,7 @@ const CountrySelect:React.FC<CountrySelectProps> = ({
                 colors:{
                     ...theme.colors,
                     primary:'black',
-                    primary25:'#ffe4e6'
+                    primary25:'#ffe4e6',
                 }
               })}
             />

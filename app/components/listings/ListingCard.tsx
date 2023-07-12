@@ -61,7 +61,7 @@ const ListingCard:React.FC<ListingCardProps> = ({
     return (
         <div 
         onClick={()=> router.push(`/listings/${data.id}`)}
-        className="col-span-1 cursor-pointer group">
+        className="col-span-1 cursor-pointer group dark:hover:bg-gray-900 dark:rounded-lg">
 
             <div className="flex flex-col gap-0.5 w-full">
                 <div className="aspect-square w-full relative overflow-hidden rounded-xl">

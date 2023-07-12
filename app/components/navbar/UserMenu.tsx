@@ -10,6 +10,7 @@ import { signOut } from 'next-auth/react';
 import { SafeUser } from '@/app/types';
 import useRentModal from '@/app/hooks/useRentModal';
 import { useRouter } from 'next/navigation';
+import Toggle from './Toggle';
 
 interface UserMenuProps{
   currentUser?:SafeUser|null
@@ -35,15 +36,16 @@ const UserMenu:React.FC<UserMenuProps> = ({currentUser}) => {
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
+        <Toggle />
         <div 
         onClick={onRent}
-        className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 cursor-pointer"
+        className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 dark:hover:bg-gray-600 cursor-pointer"
         >
            Airbnb your home
         </div>
         <div 
         onClick={toggleOpen}
-        className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-sm transition"
+        className="p-4 md:py-1 md:px-2 border-[1px] dark:border-2 border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-sm transition"
         >
        <AiOutlineMenu />
        <div className='hidden md:block'>
@@ -53,7 +55,7 @@ const UserMenu:React.FC<UserMenuProps> = ({currentUser}) => {
       </div>
 
       {isOpen && (
-        <div className='absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm'>
+        <div className='absolute rounded-xl shadow-md w-[40vw] md:w-3/4 dark:bg-black bg-white overflow-hidden right-0 top-12 text-sm'>
              <div className='flex flex-col cursor-pointer'>
               {currentUser ? (
                   <>

@@ -22,12 +22,12 @@ const ListingReservation:React.FC<ListingReservation> = ({
     onSubmit
 }) => {
     return (
-        <div className='bg-white rounded-xl border border-neutral-200 overflow-hidden '>
+        <div className='bg-white rounded-xl border border-neutral-200 dark:bg-gray-800 overflow-hidden '>
            <div className='flex flex-row items-center gap-1 p-4'>
             <div className='text-2xl font-semibold'>
                 $ {price}
             </div>
-            <div className='font-light text-neutral-600'>
+            <div className='font-light text-neutral-600 dark:text-neutral-400'>
                  night
             </div>
            </div>

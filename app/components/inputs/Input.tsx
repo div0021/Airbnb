@@ -34,7 +34,7 @@ const Input: React.FC<InputProps> = ({
         id={id}
         disabled={disabled}
         {...register(id, { required })}
-        placeholder=" "
+        placeholder=""
         type={type}
         className={`
                peer
@@ -47,6 +47,7 @@ const Input: React.FC<InputProps> = ({
                rounded-md
                outline-none
                transition
+               dark:bg-gray-800 dark:text-neutral-200
                disabled:opacity-70
                disabled:cursor-not-allowed
                ${formatPrice ? "pl-9" : "pl-4"} 
