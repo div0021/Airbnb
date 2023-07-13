@@ -1,10 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Toggle = () => {
   const [toggle, setToggle] = useState<boolean>(
-    window.matchMedia("(prefers-color-scheme:dark)").matches
+    false
   );
+  useEffect(() => {
+    if (typeof window !== "undefined" && window?.matchMedia("(prefers-color-scheme:dark)").matches) {
+      document.body.classList.add("dark");
+      setToggle(true)
+    }
+  }, []);
 
   return (
     <div
