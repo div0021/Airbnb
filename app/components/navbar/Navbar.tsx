@@ -11,7 +11,6 @@ interface NavbarProps{
   currentUser?:SafeUser | null
 }
 const Navbar:React.FC<NavbarProps> = ({currentUser}) => {
-  // console.log(currentUser);
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm dark:bg-black dark:text-[#f2f2f2] dark:shadow-md dark:shadow-gray-700">
         <div className="py-4 border-b-[1px]">

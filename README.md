@@ -3,11 +3,11 @@
 <h1 align="center">👋👋🚀🚀😎😎 Airbnb 👨🏽‍💻🚀🚀🔥🔥</h1>
 <div align="center">
   <h3>
-    <a href="https://main--taupe-gecko-cd8a82.netlify.app/">
+    <a href="https://bookingapp-three.vercel.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/div0021/quoteApp">
+    <a href="https://github.com/div0021/Airbnb">
       Solution
     </a>
     <span> | </span>
